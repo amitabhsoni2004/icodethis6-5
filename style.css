@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-column-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-column-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-column-1 {
+    grid-template-columns: 1fr;
+}
+
+.gap0 {
+    gap: 0px;
+}
+
+.gap5 {
+    gap: 5px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap12 {
+    gap: 12px;
+}
+
+.gap15 {
+    gap: 15px;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.gap30 {
+    gap: 30px;
+}
+
+.gap40 {
+    gap: 40px;
+}
+
+.gap50 {
+    gap: 50px;
+}
+
+.gap60 {
+    gap: 60px;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: #465795;
+    font-weight: 600;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #051428;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    color: white;
+}
+
+.socialApp {
+    width: 100%;
+    height: 100%;
+}
+
+.appCard {
+    height: 700px;
+    width: 700px;
+    background-color: rgb(57 73 170);
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 90px rgb(1 22 49);
+    position: relative;
+}
+
+header {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(8 29 54);
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 70%;
+    cursor: pointer;
+    animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    25% {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    75% {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+.bellSvg {
+    position: relative;
+}
+
+header small,
+.bellSvg small {
+    position: absolute;
+    color: black;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-weight: 600;
+    background-color: #ff9700;
+    border: 3px solid rgb(57 73 170);
+}
+
+.profile {
+    height: 410px;
+    width: 315px;
+    background-color: #0a213d;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    padding-right: 0px;
+    border-radius: 10px;
+    /* z-index: 2; */
+}
+
+.img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 13px #081c32;
+}
+
+.img img,
+.img2 img,
+.img1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nameSec p {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.postSec>span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.postSec {
+    padding: 0px 20px 0px 40px;
+}
+
+.profile button {
+    padding: 12.5px 40px;
+    border: 1px solid black;
+    background-color: #ff9800;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.profile button:hover {
+    /* background-color: transparent; */
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.commentSec {
+    height: 420px;
+    width: 623px;
+    background-color: #081d36;
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    padding: 30px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: none;
+    /* z-index: 1; */
+}
+
+/* Initially hide the scrollbar */
+::-webkit-scrollbar {
+    display: none;
+    width: 8px;
+}
+
+/* Track styling (optional to specify if it's the same as the container's bg) */
+::-webkit-scrollbar-track {
+    background-color: #081d36;
+}
+
+/* Thumb styling */
+::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d;
+    border-radius: 4px;
+}
+
+/* Thumb hover styling */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666666;
+}
+
+/* Show scrollbar when hovering over .commentSec */
+.commentSec:hover::-webkit-scrollbar {
+    display: block;
+}
+
+.gallery:hover::-webkit-scrollbar {
+    display: block;
+}
+
+footer {
+    height: 110px;
+    width: 700px;
+    background-color: #0e2647;
+    position: absolute;
+    /* border: 1px solid white; */
+    left: 4%;
+    bottom: 4%;
+    border-radius: 10px;
+}
+
+.img1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #081c32;
+}
+
+.shorIcon>span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.shorIcon>span>hr {
+    position: absolute;
+    transform: rotate(0deg);
+    height: 2.1px;
+    bottom: -7px;
+    width: 0%;
+    background-color: #c3774b;
+    border: none;
+    display: none;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.p1 {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.p2 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.p3 {
+    color: #c3774b;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.p3:hover,
+.p2:hover {
+    text-decoration: underline;
+    cursor: grabbing;
+}
+
+.time:hover {
+    cursor: default;
+    text-decoration: underline;
+}
+
+.p2 svg {
+    cursor: pointer;
+}
+
+.img2 {
+    height: 55px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 8px #06182c;
+    margin-top: 10px;
+}
+
+.comment {
+    width: 100%;
+}
+
+.comment>.img2 {
+    /* display: none; */
+    width: 10%;
+}
+
+.comment>.commentText {
+    width: 90%;
+}
+
+.gallery {
+    height: 420px;
+    width: 623px;
+    background-color: #081d36;
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    padding: 30px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: none;
+
+}
+
+.grid>div {
+    height: 150px;
+    width: 100%;
+    /* border: 2px solid beige; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grid>div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.5s ease-out;
+}
+
+.grid>div img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:770px) {
+    .appCard {
+        height: 640px;
+        width: 640px;
+        box-shadow: 0px 0px 0px 40px rgb(1 22 49);
+    }
+
+    footer {
+        width: 620px;
+    }
+
+    .gap50 {
+        gap: 25px;
+    }
+
+    .gap40 {
+        gap: 30px;
+    }
+
+    .gallery,
+    .commentSec {
+        width: 570px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .appCard {
+        border-radius: 0px;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh;
+        width: 100vw; */
+    }
+
+    .profile {
+        position: static;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0px;
+        justify-content: center;
+        padding: 0px 20px;
+        /* width: 366px; */
+        height: 80px;
+        width: 100%;
+        left: 0;
+        flex-direction: column !important;
+        border-radius: 0px;
+    }
+
+    .shorIcon {
+        font-size: 13px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .shorIcon .icon svg {
+        height: 20px;
+        width: 15px;
+    }
+
+    .profile {
+        right: 7.5%;
+    }
+
+    .account {
+        display: none;
+    }
+
+    .gap50 {
+        gap: 28px;
+    }
+
+    header {
+        top: 25px;
+        left: 75%;
+    }
+
+    .gallery,
+    .commentSec {
+        left: 2.5%;
+        width: 95vw;
+        height: 495px;
+    }
+
+    .grid-column-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid>div {
+        height: 200px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .comment>.img2 {
+        width: 23%;
+    }
+}
